@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552CFE441FEAC82E0008FCB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE431FEAC82E0008FCB4 /* AppDelegate.m */; };
+		552CFE4A1FEAC82E0008FCB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552CFE481FEAC82E0008FCB4 /* Main.storyboard */; };
+		552CFE4F1FEAC82E0008FCB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552CFE4D1FEAC82E0008FCB4 /* LaunchScreen.storyboard */; };
+		552CFE521FEAC82E0008FCB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE511FEAC82E0008FCB4 /* main.m */; };
+		552CFE5C1FEAC9790008FCB4 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE5B1FEAC9790008FCB4 /* Game.m */; };
+		552CFE5F1FEAC9CF0008FCB4 /* GameConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE5E1FEAC9CF0008FCB4 /* GameConfigurator.m */; };
+		552CFE631FEACD970008FCB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE621FEACD970008FCB4 /* MainViewController.m */; };
+		552CFE671FEACEA20008FCB4 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE661FEACEA20008FCB4 /* GradientView.m */; };
+		552CFE6A1FEAD1800008FCB4 /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE681FEAD1800008FCB4 /* AFViewShaker.m */; };
+		552CFE6D1FEAD1F80008FCB4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFE6C1FEAD1F80008FCB4 /* GameViewController.m */; };
+		5564D0F31FF555EE00F30016 /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564D0F21FF555EE00F30016 /* RatingViewController.m */; };
+		5577011C1FF406A30066C991 /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577011B1FF406A30066C991 /* Rating.m */; };
+		55773FCD1FF0E828001B6907 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55773FCC1FF0E828001B6907 /* GradientButton.m */; };
+		557D71801FFA9505001C073C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557D717F1FFA9505001C073C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		552CFE3F1FEAC82E0008FCB4 /* EasyTapMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTapMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		552CFE421FEAC82E0008FCB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		552CFE431FEAC82E0008FCB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		552CFE491FEAC82E0008FCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		552CFE4E1FEAC82E0008FCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		552CFE501FEAC82E0008FCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552CFE511FEAC82E0008FCB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		552CFE581FEAC85B0008FCB4 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		552CFE5A1FEAC9790008FCB4 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		552CFE5B1FEAC9790008FCB4 /* Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		552CFE5D1FEAC9CF0008FCB4 /* GameConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfigurator.h; sourceTree = "<group>"; };
+		552CFE5E1FEAC9CF0008FCB4 /* GameConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameConfigurator.m; sourceTree = "<group>"; };
+		552CFE611FEACD970008FCB4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		552CFE621FEACD970008FCB4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		552CFE651FEACEA20008FCB4 /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		552CFE661FEACEA20008FCB4 /* GradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		552CFE681FEAD1800008FCB4 /* AFViewShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewShaker.m; sourceTree = "<group>"; };
+		552CFE691FEAD1800008FCB4 /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
+		552CFE6B1FEAD1F80008FCB4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		552CFE6C1FEAD1F80008FCB4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5564D0F11FF555EE00F30016 /* RatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingViewController.h; sourceTree = "<group>"; };
+		5564D0F21FF555EE00F30016 /* RatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatingViewController.m; sourceTree = "<group>"; };
+		5577011A1FF406A30066C991 /* Rating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
+		5577011B1FF406A30066C991 /* Rating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		55773FCB1FF0E828001B6907 /* GradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		55773FCC1FF0E828001B6907 /* GradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		557D717F1FFA9505001C073C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		552CFE3C1FEAC82E0008FCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		552CFE361FEAC82E0008FCB4 = {
+			isa = PBXGroup;
+			children = (
+				552CFE411FEAC82E0008FCB4 /* EasyTapMe */,
+				552CFE401FEAC82E0008FCB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		552CFE401FEAC82E0008FCB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE3F1FEAC82E0008FCB4 /* EasyTapMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552CFE411FEAC82E0008FCB4 /* EasyTapMe */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE641FEACE5F0008FCB4 /* Colors */,
+				55773FCE1FF0EDBA001B6907 /* ViewControllers */,
+				552CFE591FEAC9510008FCB4 /* Models */,
+				552CFE601FEAC9F10008FCB4 /* Help */,
+				552CFE421FEAC82E0008FCB4 /* AppDelegate.h */,
+				552CFE431FEAC82E0008FCB4 /* AppDelegate.m */,
+				552CFE691FEAD1800008FCB4 /* AFViewShaker.h */,
+				552CFE681FEAD1800008FCB4 /* AFViewShaker.m */,
+				552CFE481FEAC82E0008FCB4 /* Main.storyboard */,
+				557D717F1FFA9505001C073C /* Assets.xcassets */,
+				552CFE4D1FEAC82E0008FCB4 /* LaunchScreen.storyboard */,
+				552CFE501FEAC82E0008FCB4 /* Info.plist */,
+				552CFE511FEAC82E0008FCB4 /* main.m */,
+			);
+			path = EasyTapMe;
+			sourceTree = "<group>";
+		};
+		552CFE591FEAC9510008FCB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE5A1FEAC9790008FCB4 /* Game.h */,
+				552CFE5B1FEAC9790008FCB4 /* Game.m */,
+				5577011A1FF406A30066C991 /* Rating.h */,
+				5577011B1FF406A30066C991 /* Rating.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		552CFE601FEAC9F10008FCB4 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE5D1FEAC9CF0008FCB4 /* GameConfigurator.h */,
+				552CFE5E1FEAC9CF0008FCB4 /* GameConfigurator.m */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		552CFE641FEACE5F0008FCB4 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE581FEAC85B0008FCB4 /* Colors.h */,
+				55773FCB1FF0E828001B6907 /* GradientButton.h */,
+				55773FCC1FF0E828001B6907 /* GradientButton.m */,
+				552CFE651FEACEA20008FCB4 /* GradientView.h */,
+				552CFE661FEACEA20008FCB4 /* GradientView.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		55773FCE1FF0EDBA001B6907 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				552CFE6B1FEAD1F80008FCB4 /* GameViewController.h */,
+				552CFE6C1FEAD1F80008FCB4 /* GameViewController.m */,
+				552CFE611FEACD970008FCB4 /* MainViewController.h */,
+				552CFE621FEACD970008FCB4 /* MainViewController.m */,
+				5564D0F11FF555EE00F30016 /* RatingViewController.h */,
+				5564D0F21FF555EE00F30016 /* RatingViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		552CFE3E1FEAC82E0008FCB4 /* EasyTapMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552CFE551FEAC82E0008FCB4 /* Build configuration list for PBXNativeTarget "EasyTapMe" */;
+			buildPhases = (
+				552CFE3B1FEAC82E0008FCB4 /* Sources */,
+				552CFE3C1FEAC82E0008FCB4 /* Frameworks */,
+				552CFE3D1FEAC82E0008FCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyTapMe;
+			productName = TapMeIfYouCan;
+			productReference = 552CFE3F1FEAC82E0008FCB4 /* EasyTapMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		552CFE371FEAC82E0008FCB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = deynega;
+				TargetAttributes = {
+					552CFE3E1FEAC82E0008FCB4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 552CFE3A1FEAC82E0008FCB4 /* Build configuration list for PBXProject "EasyTapMe" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 552CFE361FEAC82E0008FCB4;
+			productRefGroup = 552CFE401FEAC82E0008FCB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				552CFE3E1FEAC82E0008FCB4 /* EasyTapMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		552CFE3D1FEAC82E0008FCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552CFE4F1FEAC82E0008FCB4 /* LaunchScreen.storyboard in Resources */,
+				557D71801FFA9505001C073C /* Assets.xcassets in Resources */,
+				552CFE4A1FEAC82E0008FCB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		552CFE3B1FEAC82E0008FCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5577011C1FF406A30066C991 /* Rating.m in Sources */,
+				552CFE6A1FEAD1800008FCB4 /* AFViewShaker.m in Sources */,
+				55773FCD1FF0E828001B6907 /* GradientButton.m in Sources */,
+				552CFE631FEACD970008FCB4 /* MainViewController.m in Sources */,
+				552CFE521FEAC82E0008FCB4 /* main.m in Sources */,
+				552CFE6D1FEAD1F80008FCB4 /* GameViewController.m in Sources */,
+				552CFE5F1FEAC9CF0008FCB4 /* GameConfigurator.m in Sources */,
+				552CFE441FEAC82E0008FCB4 /* AppDelegate.m in Sources */,
+				5564D0F31FF555EE00F30016 /* RatingViewController.m in Sources */,
+				552CFE671FEACEA20008FCB4 /* GradientView.m in Sources */,
+				552CFE5C1FEAC9790008FCB4 /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		552CFE481FEAC82E0008FCB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552CFE491FEAC82E0008FCB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		552CFE4D1FEAC82E0008FCB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				552CFE4E1FEAC82E0008FCB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		552CFE531FEAC82E0008FCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		552CFE541FEAC82E0008FCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552CFE561FEAC82E0008FCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT4VE7YSN7;
+				INFOPLIST_FILE = "$(SRCROOT)/EasyTapMe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deynega.EasyTapMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		552CFE571FEAC82E0008FCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT4VE7YSN7;
+				INFOPLIST_FILE = "$(SRCROOT)/EasyTapMe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deynega.EasyTapMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		552CFE3A1FEAC82E0008FCB4 /* Build configuration list for PBXProject "EasyTapMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552CFE531FEAC82E0008FCB4 /* Debug */,
+				552CFE541FEAC82E0008FCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552CFE551FEAC82E0008FCB4 /* Build configuration list for PBXNativeTarget "EasyTapMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552CFE561FEAC82E0008FCB4 /* Debug */,
+				552CFE571FEAC82E0008FCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 552CFE371FEAC82E0008FCB4 /* Project object */;
+}
