@@ -16,7 +16,7 @@ https://goo.gl/pC3S6n
 
 **Andrey Deynega**
    
-WhatsApp/Telegram: +7 (925) 075-00-50   
+WhatsApp/Telegram: +7 925 075-00-50   
 E-mail: <deynega.a@gmail.com>   
 Facebook: <https://www.facebook.com/deynega.a>   
 LinkedIn: <https://www.linkedin.com/in/deynegaa>   
