@@ -37,18 +37,14 @@
 
 - (int)checkCurrentResult:(NSNumber *)result {
     if (result.unsignedIntegerValue == 0) {
-        NSLog(@"Looser!");
         return 0;
     } else if ([self checkForBestResult:result] == YES) {
         [self addResult:result];
-        NSLog(@"Best result!");
         return 3;
     } else if ([self checkForTableCurrentResult:result] == YES) {
         [self addResult:result];
-        NSLog(@"Hit the table!!");
         return 2;
     } else {
-        NSLog(@"Game Over!");
         return 1;
     }
 }

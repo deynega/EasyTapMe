@@ -193,7 +193,6 @@
 #pragma mark - Touches
 
 - (void)enableUserInteraction {
-    NSLog(@"now!");
     self.gameBoardView.userInteractionEnabled = YES;
 }
 
@@ -225,14 +224,12 @@
     NSArray *checkingArray = [NSArray arrayWithArray:self.userTagArray];
     [self.userTagArray removeAllObjects];
     if ([checkingArray isEqual:self.randomTagArray]) {
-        NSLog(@"win");
         [self flashBoxesWithColor:SUCCESS_COLOR];
         self.game.score = [self.game increaseScore];
         [self newLevel];
 
     } else {
         [self flashBoxesWithColor:ERROR_COLOR];
-        NSLog(@"lose");
         self.game.lives = @(self.game.lives.unsignedIntegerValue - 1);
         if (self.game.lives.unsignedIntegerValue > 0) {
             [self newLevel];

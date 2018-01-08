@@ -50,7 +50,6 @@
 #pragma mark - ButtonsAction
 
 - (IBAction)buttonContinue:(id)sender {
-    NSLog(@"buttonContinue");
     
     Game *currentGame = [[Game alloc] loadGame];
     GameViewController *gameVC = [[GameViewController alloc] initWithGame:currentGame];
@@ -59,7 +58,6 @@
 }
 
 - (IBAction)buttonEasy:(id)sender {
-     NSLog(@"buttonEasy");
      if ([self.userDefaults objectForKey:@"currentGame"]) {
          [self showAlertWithDifficultType:DifficultTypeEasy];
      } else {
