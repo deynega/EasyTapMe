@@ -81,6 +81,8 @@
     }
 }
 
+#pragma mark - Alerts
+
 - (void)showAlertWithDifficultType:(DifficultType)type {
     NSString *alertMessage =[NSString stringWithFormat:@"Are you sure you want to abort the current game?"];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
@@ -97,6 +99,8 @@
     [alert addAction:okAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+#pragma mark - call GameViewController With Difficult Type
 
 - (void)callGameViewControllerWithDifficultType:(DifficultType)type {
     GameViewController *gameVC = [[GameViewController alloc] initWithDifficultType:type];

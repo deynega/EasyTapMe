@@ -6,6 +6,7 @@
 //  Copyright © 2017 deynega. All rights reserved.
 //
 
+#import <StoreKit/StoreKit.h>
 #import "GameViewController.h"
 #import "MainViewController.h"
 #import "Colors.h"
@@ -312,6 +313,7 @@
 }
 
 - (void)callMainViewController {
+    [self DisplayReviewController];
     //оставлять эту анимацию, или сделать всплываение снизу?
     ////////
     CATransition *transition = [[CATransition alloc] init];
@@ -326,6 +328,17 @@
     UIViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
     [self presentViewController:mainVC animated:NO completion:nil];
 //    [self presentViewController:mainVC animated:YES completion:nil];
+    
+}
+
+#pragma mark - Rate App
+
+- (void)DisplayReviewController {
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 
