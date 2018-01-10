@@ -202,6 +202,7 @@
     
     if (self.userTagArray.count >= self.maxTouchCount) {
         self.gameBoardView.userInteractionEnabled = NO;
+        [self checkArrays];
     }
     if ([self.gameBoardView.subviews containsObject:touch.view]) {
         [UIView animateWithDuration:.4f animations:^{
