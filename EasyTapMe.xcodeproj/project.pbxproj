@@ -21,9 +21,11 @@
 		5577011C1FF406A30066C991 /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577011B1FF406A30066C991 /* Rating.m */; };
 		55773FCD1FF0E828001B6907 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55773FCC1FF0E828001B6907 /* GradientButton.m */; };
 		557D71801FFA9505001C073C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557D717F1FFA9505001C073C /* Assets.xcassets */; };
+		B292BFE0553149BB4974A474 /* libPods-EasyTapMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 449CADFA6E72D5AD51979F67 /* libPods-EasyTapMe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		449CADFA6E72D5AD51979F67 /* libPods-EasyTapMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyTapMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		552CFE3F1FEAC82E0008FCB4 /* EasyTapMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTapMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552CFE421FEAC82E0008FCB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		552CFE431FEAC82E0008FCB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		55773FCB1FF0E828001B6907 /* GradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		55773FCC1FF0E828001B6907 /* GradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		557D717F1FFA9505001C073C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C5CF84869DF49782F2CD4B4 /* Pods-EasyTapMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTapMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTapMe/Pods-EasyTapMe.debug.xcconfig"; sourceTree = "<group>"; };
+		EA5DC17A56890D20E489B045 /* Pods-EasyTapMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTapMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTapMe/Pods-EasyTapMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B292BFE0553149BB4974A474 /* libPods-EasyTapMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 			children = (
 				552CFE411FEAC82E0008FCB4 /* EasyTapMe */,
 				552CFE401FEAC82E0008FCB4 /* Products */,
+				DCB2B8C3684E50A589192D32 /* Pods */,
+				82478226C66739FA0A7894FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +152,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		82478226C66739FA0A7894FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				449CADFA6E72D5AD51979F67 /* libPods-EasyTapMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCB2B8C3684E50A589192D32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C5CF84869DF49782F2CD4B4 /* Pods-EasyTapMe.debug.xcconfig */,
+				EA5DC17A56890D20E489B045 /* Pods-EasyTapMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +176,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 552CFE551FEAC82E0008FCB4 /* Build configuration list for PBXNativeTarget "EasyTapMe" */;
 			buildPhases = (
+				1BBD46C0B339A8A344F41A59 /* [CP] Check Pods Manifest.lock */,
 				552CFE3B1FEAC82E0008FCB4 /* Sources */,
 				552CFE3C1FEAC82E0008FCB4 /* Frameworks */,
 				552CFE3D1FEAC82E0008FCB4 /* Resources */,
+				B7EC35AE444B9403D39C81CC /* [CP] Embed Pods Frameworks */,
+				AEDAAABF875FAD5E397B37A4 /* [CP] Copy Pods Resources */,
+				1D5327A6200662C800A19FEB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,6 +238,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBD46C0B339A8A344F41A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTapMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D5327A6200662C800A19FEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7b57e23b6f14572a8c5ca03c35f88a3cfb494ff0 90d46b2eafae8685ca61ee64817a2fe820e19fe9b08c3a63a2cf864637a1457c";
+		};
+		AEDAAABF875FAD5E397B37A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTapMe/Pods-EasyTapMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EC35AE444B9403D39C81CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTapMe/Pods-EasyTapMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		552CFE3B1FEAC82E0008FCB4 /* Sources */ = {
@@ -283,7 +375,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -358,6 +450,7 @@
 		};
 		552CFE561FEAC82E0008FCB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5CF84869DF49782F2CD4B4 /* Pods-EasyTapMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = launch_image;
@@ -374,6 +467,7 @@
 		};
 		552CFE571FEAC82E0008FCB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5DC17A56890D20E489B045 /* Pods-EasyTapMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = launch_image;
