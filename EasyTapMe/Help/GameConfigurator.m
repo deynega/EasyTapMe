@@ -27,10 +27,16 @@
 
 - (NSArray *)randomizeTagsWithDifficult:(DifficultType)type {
     int boxesCountMax = [self boxesCountMaxFromDifficult:type];
+    NSUInteger previousNumber = 100;
     NSUInteger boxesFlashCountMax = [self boxesFlashCountMaxFromDifficult:type];
     NSMutableArray *array = [NSMutableArray array];
     for (NSUInteger i = 0; i < boxesFlashCountMax; i++) {
-        NSUInteger random = (NSUInteger)arc4random_uniform(boxesCountMax);
+        NSUInteger random;
+        do {
+            random = (NSUInteger)arc4random_uniform(boxesCountMax);
+        } while (random == previousNumber);
+        previousNumber = random;
+        
         [array addObject:@(random)];
     }
     return array;
