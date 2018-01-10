@@ -6,6 +6,7 @@
 //  Copyright © 2017 deynega. All rights reserved.
 //
 
+#import <StoreKit/StoreKit.h>
 #import "GameViewController.h"
 #import "MainViewController.h"
 #import "Colors.h"
@@ -201,6 +202,7 @@
     
     if (self.userTagArray.count >= self.maxTouchCount) {
         self.gameBoardView.userInteractionEnabled = NO;
+        [self checkArrays];
     }
     if ([self.gameBoardView.subviews containsObject:touch.view]) {
         [UIView animateWithDuration:.4f animations:^{
@@ -312,6 +314,7 @@
 }
 
 - (void)callMainViewController {
+    [self displayReviewController];
     //оставлять эту анимацию, или сделать всплываение снизу?
     ////////
     CATransition *transition = [[CATransition alloc] init];
@@ -326,6 +329,21 @@
     UIViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
     [self presentViewController:mainVC animated:NO completion:nil];
 //    [self presentViewController:mainVC animated:YES completion:nil];
+    
+}
+
+#pragma mark - Rate App
+
+-(void)displayReviewController {
+    [NSUserDefaults.standardUserDefaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:@(0), @"displayReviewController", nil]];
+    NSInteger integer = [[NSUserDefaults.standardUserDefaults objectForKey:@"displayReviewController"] integerValue];
+    NSNumber *number = [NSNumber numberWithInteger:integer + 1];
+    if ([number integerValue] % 5 == 0){
+        if (@available(iOS 10.3, *)) {
+            [SKStoreReviewController requestReview];
+        }
+    }
+    [NSUserDefaults.standardUserDefaults setObject:number forKey:@"displayReviewController"];
 }
 
 
