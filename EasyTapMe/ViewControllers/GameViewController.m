@@ -313,7 +313,7 @@
 }
 
 - (void)callMainViewController {
-    [self DisplayReviewController];
+    [self displayReviewController];
     //оставлять эту анимацию, или сделать всплываение снизу?
     ////////
     CATransition *transition = [[CATransition alloc] init];
@@ -333,12 +333,16 @@
 
 #pragma mark - Rate App
 
-- (void)DisplayReviewController {
-    if (@available(iOS 10.3, *)) {
-        [SKStoreReviewController requestReview];
-    } else {
-        // Fallback on earlier versions
+-(void)displayReviewController {
+    [NSUserDefaults.standardUserDefaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:@(0), @"displayReviewController", nil]];
+    NSInteger integer = [[NSUserDefaults.standardUserDefaults objectForKey:@"displayReviewController"] integerValue];
+    NSNumber *number = [NSNumber numberWithInteger:integer + 1];
+    if ([number integerValue] % 5 == 0){
+        if (@available(iOS 10.3, *)) {
+            [SKStoreReviewController requestReview];
+        }
     }
+    [NSUserDefaults.standardUserDefaults setObject:number forKey:@"displayReviewController"];
 }
 
 
