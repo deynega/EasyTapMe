@@ -18,7 +18,9 @@ typedef NS_ENUM(NSUInteger, DifficultType) {
 @interface GameConfigurator : NSObject
 
 + (GameConfigurator *)configurator;
+
 - (CGFloat)animationDuration;
+
 - (NSArray *)randomizeTagsWithDifficult:(DifficultType)type;
 - (NSUInteger)rowCountFromDifficult:(DifficultType)type;
 - (NSUInteger)boxesFlashCountMaxFromDifficult:(DifficultType)type;
@@ -26,4 +28,3 @@ typedef NS_ENUM(NSUInteger, DifficultType) {
 
 
 @end
-

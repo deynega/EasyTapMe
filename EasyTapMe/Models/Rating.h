@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Rating : NSObject
+
 @property (nonatomic, strong) NSMutableArray *recordsArray;
 @property (nonatomic, strong) NSMutableDictionary *recordsDict;
 

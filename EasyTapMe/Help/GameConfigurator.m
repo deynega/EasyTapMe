@@ -25,6 +25,8 @@
     return .5f;
 }
 
+#pragma mark - Random
+
 - (NSArray *)randomizeTagsWithDifficult:(DifficultType)type {
     int boxesCountMax = [self boxesCountMaxFromDifficult:type];
     NSUInteger previousNumber = 100;
@@ -42,32 +44,14 @@
     return array;
 }
 
+#pragma mark - Box/Flash Count
+
 - (int)boxesCountMaxFromDifficult:(DifficultType)type {
-    switch (type) {
-        case DifficultTypeEasy:
-            return 9;
-            break;
-        case DifficultTypeNormal:
-            return 16;
-            break;
-        case DifficultTypeHard:
-            return 25;
-            break;
-    }
+    return (int)pow([self rowCountFromDifficult:type], 2);
 }
 
 - (NSUInteger)boxesFlashCountMaxFromDifficult:(DifficultType)type {
-    switch (type) {
-        case DifficultTypeEasy:
-            return 4;
-            break;
-        case DifficultTypeNormal:
-            return 5;
-            break;
-        case DifficultTypeHard:
-            return 6;
-            break;
-    }
+    return [self rowCountFromDifficult:type] +1;
 }
 
 - (NSUInteger)rowCountFromDifficult:(DifficultType)type {

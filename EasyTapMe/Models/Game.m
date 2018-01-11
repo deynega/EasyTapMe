@@ -43,11 +43,7 @@
     return self;
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:_score forKey:@"score"];
-    [aCoder encodeObject:_lives forKey:@"lives"];
-    [aCoder encodeInteger:_difficultType forKey:@"difficulType"];
-}
+#pragma mark - NSCoding
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
@@ -57,6 +53,12 @@
         _difficultType = [aDecoder decodeIntegerForKey: @"difficulType"];
     }
     return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:_score forKey:@"score"];
+    [aCoder encodeObject:_lives forKey:@"lives"];
+    [aCoder encodeInteger:_difficultType forKey:@"difficulType"];
 }
 
 - (void)saveGame {
@@ -76,5 +78,6 @@
     self.score = @(self.score.unsignedIntegerValue + raise);
     return self.score;
 }
+
 
 @end

@@ -13,7 +13,9 @@
 #import "Game.h"
 
 @interface MainViewController ()
+
 - (IBAction)buttonContinue:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UIButton *buttonContinue;
 @property (nonatomic, strong) NSUserDefaults* userDefaults;
 
@@ -32,7 +34,6 @@
     [self.view addSubview:gradientViewBackground];
     [self.view sendSubviewToBack:gradientViewBackground];
     
-    self.userDefaults = NSUserDefaults.standardUserDefaults;
     [self.navigationController.navigationBar setValue:@(YES) forKeyPath:@"hidesShadow"];  // --- this code remove liner between nav bar and view
 }
 
