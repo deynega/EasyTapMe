@@ -9,8 +9,8 @@
 #import "Rating.h"
 #import "GameViewController.h"
 
-
 @interface Rating ()
+
 @property (nonatomic, strong) GameViewController *gameVC;
 
 @end
@@ -34,6 +34,8 @@
         self.recordsArray = [NSMutableArray arrayWithArray:[NSUserDefaults.standardUserDefaults objectForKey:@"records"]];
     }
 }
+
+#pragma mark - Check results
 
 - (int)checkCurrentResult:(NSNumber *)result {
     if (result.unsignedIntegerValue == 0) {
@@ -74,6 +76,8 @@
     [self sortRecordsArray];
     [NSUserDefaults.standardUserDefaults setObject:self.recordsArray forKey:@"records"];
 }
+
+#pragma mark - Sort
 
 -(void)sortRecordsArray {
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:NO];

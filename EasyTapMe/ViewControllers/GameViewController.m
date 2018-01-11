@@ -14,8 +14,8 @@
 #import "GradientView.h"
 #import "Rating.h"
 
-
 @interface GameViewController ()
+
 @property (nonatomic, assign, readonly) DifficultType difficultType;
 @property (nonatomic, strong) NSMutableArray <NSNumber *> *randomTagArray;
 @property (nonatomic, strong) NSMutableArray *userTagArray;
@@ -200,7 +200,7 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     
-    if (self.userTagArray.count >= self.maxTouchCount) {
+    if (self.userTagArray.count >= self.randomTagArray.count) {
         self.gameBoardView.userInteractionEnabled = NO;
         [self checkArrays];
     }
@@ -313,23 +313,20 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+#pragma mark - call Main View Controller
+
 - (void)callMainViewController {
     [self displayReviewController];
-    //оставлять эту анимацию, или сделать всплываение снизу?
-    ////////
     CATransition *transition = [[CATransition alloc] init];
     transition.duration = 0.5;
     transition.type = kCATransitionPush;
     transition.subtype = kCATransitionFromRight;
     [transition setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     [self.view.window.layer addAnimation:transition forKey:kCATransition];
-    ////////
     NSString *storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     UIViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"NavigationController"];
     [self presentViewController:mainVC animated:NO completion:nil];
-//    [self presentViewController:mainVC animated:YES completion:nil];
-    
 }
 
 #pragma mark - Rate App

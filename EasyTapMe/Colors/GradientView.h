@@ -11,5 +11,5 @@
 
 @interface GradientView : UIView
 
-@end
 
+@end
